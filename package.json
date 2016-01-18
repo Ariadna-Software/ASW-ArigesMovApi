@@ -1,6 +1,6 @@
 {
-  "name": "AriGesMovApi",
-  "version": "0.0.2",
+  "name": "ariges-mov-api",
+  "version": "0.0.3",
   "description": "API de acceso para la aplici�n movil AriGes",
   "main": "server.js",
   "author": {
