@@ -3,7 +3,8 @@ console.log("AriGesMovApi --------");
 // Cargar los módulos básicos
 var express = require('express');
 var bodyParser = require("body-parser"); // proceso de los cuerpos de mensaje
-var pjson = require('./package.json'); // read vrs a more information
+var pjson = require('./package.json'); // read vrs and more information
+var cors = require('cors'); // cross origin resopurce sharing management
 
 // modulos encargados de las rutas
 var usuario_router = require('./lib/usuario/usuario_controller');
@@ -25,6 +26,9 @@ var config = require('./config/config.json');
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(bodyParser.json());
+
+// CORS management
+app.use(cors());
 
 
 //-------------------------------------------------------------
