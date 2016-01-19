@@ -16,6 +16,7 @@ var pedidos_router = require('./lib/pedidos/pedidos_controller');
 var albaranes_router = require('./lib/albaranes/albaranes_controller');
 var indicadores_router = require('./lib/indicadores/indicadores_controller');
 var facturas_router = require('./lib/facturas/facturas_controller');
+var articulos_router = require('./lib/articulos/articulos_controller');
 // express
 var app = express();
 
@@ -69,6 +70,8 @@ app.use('/api/albaranes', albaranes_router);
 app.use('/api/indicadores', indicadores_router);
 //---------- Rutas relacionadas con facturas
 app.use('/api/facturas', facturas_router);
+//---------- Rutas relacionadas con articulos
+app.use('/api/articulos', articulos_router);
 
 // Registrar rutas base
 app.use('/api', router);
