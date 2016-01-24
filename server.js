@@ -18,6 +18,7 @@ var indicadores_router = require('./lib/indicadores/indicadores_controller');
 var facturas_router = require('./lib/facturas/facturas_controller');
 var articulos_router = require('./lib/articulos/articulos_controller');
 var proveedores_router = require('./lib/proveedores/proveedores_controller');
+var familias_router = require('./lib/familias/familias_controller');
 // express
 var app = express();
 
@@ -75,6 +76,8 @@ app.use('/api/facturas', facturas_router);
 app.use('/api/articulos', articulos_router);
 //---------- Rutas relacionadas con proveedores
 app.use('/api/proveedores', proveedores_router);
+//---------- Rutas relacionadas con familias
+app.use('/api/familias', familias_router);
 
 // Registrar rutas base
 app.use('/api', router);
