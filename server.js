@@ -17,6 +17,9 @@ var albaranes_router = require('./lib/albaranes/albaranes_controller');
 var indicadores_router = require('./lib/indicadores/indicadores_controller');
 var facturas_router = require('./lib/facturas/facturas_controller');
 var articulos_router = require('./lib/articulos/articulos_controller');
+var proveedores_router = require('./lib/proveedores/proveedores_controller');
+var familias_router = require('./lib/familias/familias_controller');
+var fpago_router = require('./lib/fpago/fpago_controller');
 // express
 var app = express();
 
@@ -72,6 +75,12 @@ app.use('/api/indicadores', indicadores_router);
 app.use('/api/facturas', facturas_router);
 //---------- Rutas relacionadas con articulos
 app.use('/api/articulos', articulos_router);
+//---------- Rutas relacionadas con proveedores
+app.use('/api/proveedores', proveedores_router);
+//---------- Rutas relacionadas con familias
+app.use('/api/familias', familias_router);
+//---------- Rutas relacionadas con formas de pago
+app.use('/api/fpago', fpago_router);
 
 // Registrar rutas base
 app.use('/api', router);
