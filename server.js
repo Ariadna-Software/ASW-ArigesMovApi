@@ -20,6 +20,7 @@ var articulos_router = require('./lib/articulos/articulos_controller');
 var proveedores_router = require('./lib/proveedores/proveedores_controller');
 var familias_router = require('./lib/familias/familias_controller');
 var fpago_router = require('./lib/fpago/fpago_controller');
+var actividades_router = require('./lib/actividades/actividades_controller');
 // express
 var app = express();
 
@@ -81,6 +82,8 @@ app.use('/api/proveedores', proveedores_router);
 app.use('/api/familias', familias_router);
 //---------- Rutas relacionadas con formas de pago
 app.use('/api/fpago', fpago_router);
+//---------- Rutas relacionadas con actividades
+app.use('/api/actividades', actividades_router);
 
 // Registrar rutas base
 app.use('/api', router);
