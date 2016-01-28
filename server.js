@@ -21,6 +21,7 @@ var proveedores_router = require('./lib/proveedores/proveedores_controller');
 var familias_router = require('./lib/familias/familias_controller');
 var fpago_router = require('./lib/fpago/fpago_controller');
 var actividades_router = require('./lib/actividades/actividades_controller');
+var clipot_router = require('./lib/clipot/clipot_controller');
 // express
 var app = express();
 
@@ -84,6 +85,8 @@ app.use('/api/familias', familias_router);
 app.use('/api/fpago', fpago_router);
 //---------- Rutas relacionadas con actividades
 app.use('/api/actividades', actividades_router);
+//---------- Rutas relacionadas con clientes potenciales
+app.use('/api/clipot', clipot_router);
 
 // Registrar rutas base
 app.use('/api', router);
