@@ -1,6 +1,6 @@
 {
   "name": "ariges-mov-api",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "API de acceso para la aplici�n movil AriGes",
   "main": "server.js",
   "author": {
@@ -13,5 +13,13 @@
     "cors": "^2.7.1",
     "express": "^4.13.3",
     "mysql": "^2.9.0"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^1.1.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
