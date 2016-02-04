@@ -25,6 +25,11 @@ var clipot_router = require('./lib/clipot/clipot_controller');
 // express
 var app = express();
 
+// CORS management
+app.options('*', cors()); // include before other routes
+app.use(cors());
+
+
 // leyendo la configuracion 
 var config = require('./config/config.json');
 
@@ -33,8 +38,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(bodyParser.json());
 
-// CORS management
-app.use(cors());
 
 
 //-------------------------------------------------------------
