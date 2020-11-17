@@ -1,5 +1,5 @@
 ﻿{
-    "server": "mysql01.ariadnasw.com",
+    "server": "localhost",
     "port": 3306,
     "user": "root",
     "password": "aritel",
