@@ -1,5 +1,5 @@
 {
-	"apiPort":9081,
-	"apiHost":"localhost",
+	"apiPort": 9080,
+	"apiHost": "localhost",
 	"docUrl": "http://localhost:8088"
 }
