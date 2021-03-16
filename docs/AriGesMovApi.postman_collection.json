@@ -1,0 +1,1071 @@
+{
+	"info": {
+		"_postman_id": "9a49749b-a70c-2f3c-e1bd-ba3478722036",
+		"name": "AriGesMovApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API Base",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9080/api",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Indicadores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9080/api/indicadores/?codclien=1568&codmacta=4300001568",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"indicadores",
+						""
+					],
+					"query": [
+						{
+							"key": "codclien",
+							"value": "1568"
+						},
+						{
+							"key": "codmacta",
+							"value": "4300001568"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Cobros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9080/api/cobros/?codmacta=4300001165",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"cobros",
+						""
+					],
+					"query": [
+						{
+							"key": "codmacta",
+							"value": "4300001165"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Precios especiales",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9080/api/articulos/precios-especiales/?codclien=458",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"articulos",
+						"precios-especiales",
+						""
+					],
+					"query": [
+						{
+							"key": "codclien",
+							"value": "458"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Descuentos especiales",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9080/api/articulos/descuentos-especiales/?codclien=37",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"articulos",
+						"descuentos-especiales",
+						""
+					],
+					"query": [
+						{
+							"key": "codclien",
+							"value": "37"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Proveedores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9080/api/proveedores/?parnom=zam",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"proveedores",
+						""
+					],
+					"query": [
+						{
+							"key": "parnom",
+							"value": "zam"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Proveedores Descuentos Rappeles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9080/api/proveedores/descuentos-rappeles/?codprove=12430",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"proveedores",
+						"descuentos-rappeles",
+						""
+					],
+					"query": [
+						{
+							"key": "codprove",
+							"value": "12430"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Articulos Ext",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9080/api/articulos/ext/?parnom=tuer&parpro=federal&parfam=ve",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"articulos",
+						"ext",
+						""
+					],
+					"query": [
+						{
+							"key": "parnom",
+							"value": "tuer"
+						},
+						{
+							"key": "parpro",
+							"value": "federal"
+						},
+						{
+							"key": "parfam",
+							"value": "ve"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Familias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9080/api/familias/?parnom=as",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"familias",
+						""
+					],
+					"query": [
+						{
+							"key": "parnom",
+							"value": "as"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Pedidos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9080/api/pedidos",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Pedidos Cab Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"numpedcl\": \"0\",\n    \"fecpedcl\": \"2016-01-01\",\n    \"codclien\": \"8\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9080/api/pedidos/cabpedido",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"pedidos",
+						"cabpedido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Pedidos Cab Put",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"numpedcl\": \"3600014\",\n    \"fecpedcl\": \"2016-01-01\",\n    \"codclien\": \"8\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9080/api/pedidos/cabpedido",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"pedidos",
+						"cabpedido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Pedidos Cab Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"numpedcl\": \"3600014\",\n    \"fecpedcl\": \"2016-01-01\",\n    \"codclien\": \"8\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9080/api/pedidos/cabpedido",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"pedidos",
+						"cabpedido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Pedidos Lin Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"numpedcl\": \"1\",\n    \"numlinea\": \"0\",\n    \"codartic\": \"00804000\",\n    \"codalmac\": \"1\",\n    \"nomartic\": \"BATERIA\",\n    \"cantidad\": \"2\",\n    \"precioar\": \"10.25\",\n    \"dtoline1\": \"0\",\n    \"dtoline2\": \"0\",\n    \"importel\": \"20.50\",\n    \"bultosser\": \"0\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9080/api/pedidos/linpedido",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"pedidos",
+						"linpedido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Pedidos Lin Put",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"numpedcl\": \"3600013\",\n    \"numlinea\": \"1\",\n    \"codartic\": \"00804000\",\n    \"codalmac\": \"1\",\n    \"nomartic\": \"BATERIADOS\",\n    \"cantidad\": \"2\",\n    \"precioar\": \"10.25\",\n    \"dtoline1\": \"0\",\n    \"dtoline2\": \"0\",\n    \"importel\": \"20.50\",\n    \"bultosser\": \"0\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9080/api/pedidos/linpedido",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"pedidos",
+						"linpedido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Pedidos Lin Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"numpedcl\": \"3600013\",\n    \"numlinea\": \"1\",\n    \"codartic\": \"00804000\",\n    \"codalmac\": \"1\",\n    \"nomartic\": \"BATERIADOS\",\n    \"cantidad\": \"2\",\n    \"precioar\": \"10.25\",\n    \"dtoline1\": \"0\",\n    \"dtoline2\": \"0\",\n    \"importel\": \"20.50\",\n    \"bultosser\": \"0\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9080/api/pedidos/linpedido",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"pedidos",
+						"linpedido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Cobros Put",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"numserie\": \"A\",\n    \"codfaccl\": \"0\",\n    \"fecfaccl\": \"2013-01-15\",\n    \"numorden\": \"1\",\n    \"codforpa\": \"5\",\n    \"fecultco\": \"2016-01-01\",\n    \"impcobro\": \"111.55\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9080/api/cobros",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"cobros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API FPago",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9080/api/fpago",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"fpago"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Pedido Uno",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9080/api/pedidos/pedido?numpedcl=1",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"pedidos",
+						"pedido"
+					],
+					"query": [
+						{
+							"key": "numpedcl",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Pedidos Agente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9080/api/pedidos/agente/?codagent=5",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"pedidos",
+						"agente",
+						""
+					],
+					"query": [
+						{
+							"key": "codagent",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Actividades",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9080/api/actividades/?parnom=a",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"actividades",
+						""
+					],
+					"query": [
+						{
+							"key": "parnom",
+							"value": "a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Clipot",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9080/api/clipot/?parnom=ped",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"clipot",
+						""
+					],
+					"query": [
+						{
+							"key": "parnom",
+							"value": "ped"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Clipot POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"codclien\": \"0\",\r\n  \"nomclien\": \"Juan Pelocho\",\r\n  \"nomcomer\": \"Pelochos S.L.\",\r\n  \"domclien\": \"Avenida del Zon N.44\",\r\n  \"codpobla\": \"46001\",\r\n  \"pobclien\": \"Valencia\",\r\n  \"proclien\": \"Valencia\",\r\n  \"nifclien\": \"A2562\",\r\n  \"wwwclien\": \"\",\r\n  \"fechamov\": \"2016-01-01\",\r\n  \"fechaalt\": \"2016-01-01\",\r\n  \"codactiv\": \"1\",\r\n  \"perclie1\": \"Juanito\",\r\n  \"telclie1\": \"963 52 52 52\",\r\n  \"faxclie1\": \"963 45 45 45\",\r\n  \"maiclie1\": \"juan@gmail.com\",\r\n  \"perclie2\": \"null\",\r\n  \"maiclie2\": \"null\",\r\n  \"observac\": \"null\"  \r\n}"
+				},
+				"url": {
+					"raw": "localhost:9080/api/clipot/?parnom=ped",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"clipot",
+						""
+					],
+					"query": [
+						{
+							"key": "parnom",
+							"value": "ped"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Clipot Codclien",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9080/api/clipot/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"clipot",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Clipot PUT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"codclien\": \"2\",\r\n  \"nomclien\": \"Meliantes\",\r\n  \"nomcomer\": \"Melitan S.L.\",\r\n  \"domclien\": \"Terra Desmoins 7899\",\r\n  \"codpobla\": \"46001\",\r\n  \"pobclien\": \"Valencia\",\r\n  \"proclien\": \"Valencia\",\r\n  \"nifclien\": \"A2562\",\r\n  \"wwwclien\": \"\",\r\n  \"fechamov\": \"2016-01-01\",\r\n  \"fechaalt\": \"2016-01-01\",\r\n  \"codactiv\": \"1\",\r\n  \"perclie1\": \"MArianet\",\r\n  \"telclie1\": \"963 52 52 52\",\r\n  \"faxclie1\": \"963 45 45 45\",\r\n  \"maiclie1\": \"juan@gmail.com\",\r\n  \"perclie2\": \"null\",\r\n  \"maiclie2\": \"null\",\r\n  \"observac\": \"null\"  \r\n}"
+				},
+				"url": {
+					"raw": "localhost:9080/api/clipot/?parnom=ped",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"clipot",
+						""
+					],
+					"query": [
+						{
+							"key": "parnom",
+							"value": "ped"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Clipot DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"codclien\": \"3\",\r\n  \"nomclien\": \"Meliantes\",\r\n  \"nomcomer\": \"Melitan S.L.\",\r\n  \"domclien\": \"Terra Desmoins 7899\",\r\n  \"codpobla\": \"46001\",\r\n  \"pobclien\": \"Valencia\",\r\n  \"proclien\": \"Valencia\",\r\n  \"nifclien\": \"A2562\",\r\n  \"wwwclien\": \"\",\r\n  \"fechamov\": \"2016-01-01\",\r\n  \"fechaalt\": \"2016-01-01\",\r\n  \"codactiv\": \"1\",\r\n  \"perclie1\": \"MArianet\",\r\n  \"telclie1\": \"963 52 52 52\",\r\n  \"faxclie1\": \"963 45 45 45\",\r\n  \"maiclie1\": \"juan@gmail.com\",\r\n  \"perclie2\": \"null\",\r\n  \"maiclie2\": \"null\",\r\n  \"observac\": \"null\"  \r\n}"
+				},
+				"url": {
+					"raw": "localhost:9080/api/clipot?codclien=3",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"clipot"
+					],
+					"query": [
+						{
+							"key": "codclien",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API LinCobro POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numserie\":\"A\",\r\n  \"codfaccl\":\"1600027\",\r\n  \"fecfaccl\":\"2016-01-15\",\r\n  \"numorden\":\"1\",\r\n  \"id\":\"0\",\r\n  \"fecha\":\"2016-02-01\",\r\n  \"importe\":\"14.20\",\r\n  \"codforpa\":\"1\",\r\n  \"observa\":\"Observaciones\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:9080/api/cobros/lineas",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"cobros",
+						"lineas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API LinCobro DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9080/api/cobros/lineas?numserie=A&codfaccl=1600027&fecfaccl=2016-01-14&numorden=1&id=1&importe=14.20",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"cobros",
+						"lineas"
+					],
+					"query": [
+						{
+							"key": "numserie",
+							"value": "A"
+						},
+						{
+							"key": "codfaccl",
+							"value": "1600027"
+						},
+						{
+							"key": "fecfaccl",
+							"value": "2016-01-14"
+						},
+						{
+							"key": "numorden",
+							"value": "1"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						},
+						{
+							"key": "importe",
+							"value": "14.20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API LinCobro Agente GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9080/api/cobros/lineas/agente?codagent=5",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"cobros",
+						"lineas",
+						"agente"
+					],
+					"query": [
+						{
+							"key": "codagent",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Cobro GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9080/api/cobros/cobro?numserie=A&codfaccl=1501168&fecfaccl=2015-08-20&numorden=1",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"cobros",
+						"cobro"
+					],
+					"query": [
+						{
+							"key": "numserie",
+							"value": "A"
+						},
+						{
+							"key": "codfaccl",
+							"value": "1501168"
+						},
+						{
+							"key": "fecfaccl",
+							"value": "2015-08-20"
+						},
+						{
+							"key": "numorden",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API LinCobro GET ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9080/api/cobros/lineas?numserie=A&codfaccl=1501168&fecfaccl=2015-08-20&numorden=1",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"cobros",
+						"lineas"
+					],
+					"query": [
+						{
+							"key": "numserie",
+							"value": "A"
+						},
+						{
+							"key": "codfaccl",
+							"value": "1501168"
+						},
+						{
+							"key": "fecfaccl",
+							"value": "2015-08-20"
+						},
+						{
+							"key": "numorden",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Cobro GetCobro",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "localhost:9080/api/cobros/cobro?numserie=A&codfaccl=1501168&fecfaccl=2015-08-20&numorden=1",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"cobros",
+						"cobro"
+					],
+					"query": [
+						{
+							"key": "numserie",
+							"value": "A"
+						},
+						{
+							"key": "codfaccl",
+							"value": "1501168"
+						},
+						{
+							"key": "fecfaccl",
+							"value": "2015-08-20"
+						},
+						{
+							"key": "numorden",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Cobro GetCobroLineas",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "localhost:9080/api/cobros/lineas?numserie=A&codfaccl=1600027&fecfaccl=2016-01-15&numorden=1",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"cobros",
+						"lineas"
+					],
+					"query": [
+						{
+							"key": "numserie",
+							"value": "A"
+						},
+						{
+							"key": "codfaccl",
+							"value": "1600027"
+						},
+						{
+							"key": "fecfaccl",
+							"value": "2016-01-15"
+						},
+						{
+							"key": "numorden",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Facturas Numserie (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9080/api/facturas/facserie/?numserie=A&cabfaccl=1500804&fecfaccl=2015-05-28",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"facturas",
+						"facserie",
+						""
+					],
+					"query": [
+						{
+							"key": "numserie",
+							"value": "A"
+						},
+						{
+							"key": "cabfaccl",
+							"value": "1500804"
+						},
+						{
+							"key": "fecfaccl",
+							"value": "2015-05-28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Cliente GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9080/api/clientes/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"clientes",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Estadisticas Anualaes Cliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9080/api/clientes/vanual/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"clientes",
+						"vanual",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
