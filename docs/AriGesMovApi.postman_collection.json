@@ -514,7 +514,29 @@
 			"response": []
 		},
 		{
-			"name": "API Pedidos Agente",
+			"name": "API Pedidos Proveedor Cliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9080/api/pedidos/proveedor/cliente/4979",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"pedidos",
+						"proveedor",
+						"cliente",
+						"4979"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Pedidos Agente Copy",
 			"request": {
 				"method": "GET",
 				"header": [],
