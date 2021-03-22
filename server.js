@@ -23,6 +23,7 @@ var fpago_router = require('./lib/fpago/fpago_controller');
 var actividades_router = require('./lib/actividades/actividades_controller');
 var clipot_router = require('./lib/clipot/clipot_controller');
 var acciones_router = require('./lib/acciones/acciones_controller');
+var estadisticas_router = require('./lib/estadisticas/estadisticas_controller');
 // express
 var app = express();
 
@@ -48,7 +49,7 @@ app.use(bodyParser.json());
 var router = express.Router();
 
 // paso común de cualquier ruta
-router.use(function(req, res, next){
+router.use(function (req, res, next) {
 	// aquí va el código común
 	// ----------------------------
 	// continúa la ejecución
@@ -56,9 +57,9 @@ router.use(function(req, res, next){
 });
 
 // ruta raiz
-router.get('/', function (req, res){
-    var str = JSON.stringify(pjson, null, 2); //
-    res.end(str);
+router.get('/', function (req, res) {
+	var str = JSON.stringify(pjson, null, 2); //
+	res.end(str);
 });
 
 //---------- Rutas relacionadas con los usuarios
@@ -93,6 +94,8 @@ app.use('/api/actividades', actividades_router);
 app.use('/api/clipot', clipot_router);
 //---------- Rutas relacionadas las acciones
 app.use('/api/acciones', acciones_router);
+//---------- Rutas relacionadas las estadisticas
+app.use('/api/estadisticas', estadisticas_router);
 
 // Registrar rutas base
 app.use('/api', router);

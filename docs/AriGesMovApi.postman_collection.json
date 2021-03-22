@@ -54,6 +54,41 @@
 			"response": []
 		},
 		{
+			"name": "API Estadisticas Ventas Agente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9080/api/estadisticas/ventas_agente/?codagen=6&fechaini=2020-01-01&fechafin=2020-01-31",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"estadisticas",
+						"ventas_agente",
+						""
+					],
+					"query": [
+						{
+							"key": "codagen",
+							"value": "6"
+						},
+						{
+							"key": "fechaini",
+							"value": "2020-01-01"
+						},
+						{
+							"key": "fechafin",
+							"value": "2020-01-31"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "API Cobros",
 			"request": {
 				"method": "GET",
@@ -519,7 +554,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:9080/api/pedidos/proveedor/cliente/4979",
+					"raw": "localhost:9080/api/pedidos/proveedor/cliente/4942",
 					"host": [
 						"localhost"
 					],
@@ -529,7 +564,7 @@
 						"pedidos",
 						"proveedor",
 						"cliente",
-						"4979"
+						"4942"
 					]
 				}
 			},
