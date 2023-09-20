@@ -1,9 +1,9 @@
 ﻿{
-    "server": "mysql01.ariadnasw.com",
+    "server": "localhost",
     "port": 3306,
     "user": "root",
     "password": "aritel",
     "database_ariges": "ariges1",
-    "database_usuarios": "usuarios",
+    "database_usuarios": "herbelca_usuarios",
     "database_conta": "ariconta1"
 }

@@ -1,0 +1,5 @@
+docker buildx build -t ariadnasw/ariges-mov-api:latest -t ariadnasw/ariges-mov-api:3.0.4 --platform linux/amd64 -f Dockerfile . 
+
+docker build -t ariadnasw/ariges-mov-api:latest -t ariadnasw/ariges-mov-api:3.0.4 .
+docker push ariadnasw/ariges-mov-api:latest
+docker push ariadnasw/ariges-mov-api:3.0.4
